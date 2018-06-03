@@ -1,9 +1,7 @@
 import React from 'react'
 
-export default class HelloWorld extends React.Component{
-    render(){
-        return(
-            <h1> HelloWorld {this.props.name} </h1>
-        )
-    }
+export const HelloWorld = (props) =>{
+    return (
+        <h1> Hello {props.name} </h1>
+    )
 }

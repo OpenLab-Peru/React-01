@@ -86,3 +86,15 @@ export default class HelloWorld extends React.Component{
 }
 
 ```
+### Agregando un Estado
+- En App.js agregar el siguiente bloque, luego de `Component{`
+```javascript
+state ={
+    name:"Joseph"
+  }
+```
+
+### Agregando un Login
+-Crear dentro de la carpeta Component, el archivo `Singin.js`
+- Dentro de `App.js`
+<SingIn />

@@ -3,9 +3,20 @@ import { render } from 'react-dom';
 import HelloWorld from './Components/HelloWorld'
 
 class App extends Component{
+
+  state ={
+    name:"Joseph"
+  }
+
+  changingName = () =>{
+    this.setState({
+      name: 'OpenLab'
+    })
+  }
+
   render(){
     return (
-      <HelloWorld name={Josh} />
+      <SingIn name={this.state.name} changeName={this.changingName} />
     );
   }
 }
