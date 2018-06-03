@@ -21,7 +21,16 @@ Colaborador:  [joshDev1205](https://github.com/joshDev1205/ "Coache Josh")
 
 
 - npm i react react-dom -S
-- npm i -D parcel-bundler babel-preset-env babel-preset-react
+- npm i -D parcel-bundler babel-preset-env babel-preset-react babel-plugin-transform-class-properties
+- Crear un archivo .babelrc en el escribir la configuracion para los presets utilizados:
+    ```json
+       {
+           "presets": [
+                "env",
+                "react"
+            ]
+       } 
+    ```
 - Crear un archivo HTML  `index.html ` y crear un elemento con un ID "app"  ejemplo:
 ```html
 <div id="app">
